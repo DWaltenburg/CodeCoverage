@@ -67,4 +67,11 @@ public class UnitTestShape
         Circle c1 = new(3);
         Assert.Equal("techmath.Circle(3)", c1.ToString());
     }
+
+    [Fact]
+    public void TestRightTriangleConstructor()
+    {
+        RightTriangle rt1 = new(3, 4, 5);
+        Assert.NotNull(rt1);
+    }
 }
